@@ -1,0 +1,188 @@
+*{
+    max-width: 1440px;
+    padding: 0;
+    
+}
+body {
+    font-family: "Hanken Grotesk";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden ;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 10px 10px 20px #E0EAFF;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.card1 {
+    background-image: linear-gradient(#6743FF,#312CEA);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.circle {
+    width: 130px;
+    height: 130px;
+    border: 1px transparent solid;
+    background-image: linear-gradient(#4D22C9, #4734F0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bnumber {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+}
+.snumber {
+    font-size: 14px;
+    color: #D1C7FF;
+    margin: 0;
+}
+.card1 h1{
+    font-size: 25px;
+    color: #fff;
+    padding-top: 15px;
+}
+.card1 h2{
+    font-size: 17px;
+    color: #D1C7FF;
+    padding-bottom: 15px;
+}
+.card1 p {
+    margin: 0 30px;
+    padding: 0 3px;
+    color:#D1C7FF;
+    padding-bottom: 50px;
+}
+
+.card2 {
+    padding-left: 30px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card2 h1 {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    justify-content: left;
+}
+.card2 h4 {
+    margin-left: 8px;
+}
+.card2 h5 {
+    margin-left:80px ;
+    font-size: 17px;
+    padding-right: 4px;
+    font-weight: 900 ;
+    color: #303B59;
+}
+.card2 h6 {
+    padding-right: 8px;
+    color: #B8C1C6;
+}
+.card2 img {
+    width: 20px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reaction {
+    background-color:  hsla(0, 100%, 67%, 0.096);
+    color: hsla(0, 100%, 67%);
+    border-radius: 10px;
+    width: 230px;
+    height:40px ;
+    font-size: 16px;
+    margin-bottom: 20px ;
+}
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.096);
+    color:hsl(39, 100%, 56%);
+    border-radius: 10px;
+    width: 230px;
+    height:40px ;
+    font-size: 16px;
+    margin-bottom: 20px ;
+}
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.096);
+    color: hsl(166, 100%, 37%);
+    border-radius: 10px;
+    width: 230px;
+    height:40px ;
+    font-size: 16px;
+    margin-bottom: 20px ;
+}
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.096);
+    color: hsl(234, 85%, 45%);
+    border-radius: 10px;
+    width: 230px;
+    height:40px ;
+    font-size: 16px;
+    margin-bottom: 40px ;
+}
+
+.continue {
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #303B59;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    margin-top: 450px;
+    font-weight: 700;
+}
+.continue:hover {
+    background-image: linear-gradient(#5D3EFB, #3B30F0);
+}
+
+@media screen and (max-width:650px) {
+    body {
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .content {
+        box-shadow: 10px 10px 20px #E0EAFF;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        margin-top: 800px;
+    }
+}
